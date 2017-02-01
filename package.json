@@ -1,0 +1,50 @@
+{
+  "name": "date-fns-momentjs-perf-test",
+  "version": "1.0.0",
+  "description": "Performance tests for date-fns and momentjs",
+  "scripts": {
+    "compile": "rimraf lib/ && babel src/ --out-dir lib",
+    "bench:parse-test": "node lib/parse-test",
+    "bench:get-test": "node lib/get-test",
+    "bench:manipulate-test": "node lib/manipulate-test",
+    "bench:display-test": "node lib/display-test",
+    "bench:query-test": "node lib/query-test",
+    "bench": "npm run --silent compile && npm run --silent bench:parse-test && npm run --silent bench:get-test && npm run --silent bench:manipulate-test && npm run --silent bench:display-test && npm run --silent bench:query-test",
+    "bundle": "babel-node src/size-test",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemussa/date-fns-momentjs-perf-test.git"
+  },
+  "keywords": [],
+  "author": "José Mussa <jmu@hellofresh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josemussa/date-fns-momentjs-perf-test/issues"
+  },
+  "homepage": "https://github.com/josemussa/date-fns-momentjs-perf-test",
+  "dependencies": {
+    "babel-loader": "^6.2.7",
+    "beautify-benchmark": "^0.2.4",
+    "benchmark": "^2.1.2",
+    "cli-table": "^0.3.1",
+    "date-fns": "~1.27.1",
+    "easy-table": "^1.0.0",
+    "moment": "~2.17.1",
+    "rimraf": "~2.5.4",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
+  }
+}
