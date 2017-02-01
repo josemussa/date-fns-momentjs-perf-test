@@ -1,6 +1,6 @@
 # Date-fns and MomentJs Performance test
 
-We are testing the performance of date-fns and momentJs against the basic operations of a dates library:
+We are testing the performance of date-fns and momentJs against some basic operations of a dates library:
 
 - Parsing a string to date object.
 - Getting the day of the year.
