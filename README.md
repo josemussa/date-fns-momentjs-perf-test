@@ -99,3 +99,5 @@ Size moment 231.434KB
 Size moment-no-locales 49.467KB
 Size date-fns 30.387KB
 ```
+
+Props to [@PepijnSenders](https://github.com/PepijnSenders) for inspiring this test and his awesome job on [The css-in-js battle](https://engineering.hellofresh.com/the-css-in-js-battle-89c34a7a83ea#.p98o1m3qz)
